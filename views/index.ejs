@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pokemon</title>
+</head>
+<body>
+    <nav>
+        <article>
+            <img class="bola" src="/img/Pokebola.png">
+        </article>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Cadastro">Cadastro</a></li>
+        </ul>
+    </nav>
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+    <header>
+        <center>
+        <img class="pokemon" src="/img/Pokemon.png">
+        </center>
+    </header>
+    <section id="pokedex">
+        <% pokedex.forEach((item, index)=> { %>
+            <a href="/Deck/<%= index%>" class="Deck">
+                <img src="<%= item.imagem %>">
+                <h2><%= item.nome %></h2>
+                <h4><%= item.tipo %></h4>
+            </a>
+            <% }) %>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>
