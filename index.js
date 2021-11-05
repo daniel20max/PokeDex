@@ -1,7 +1,7 @@
 const { constants } = require("buffer");
 const express = require("express");
 const app = express();
-const port = process.ev.PORT || 3000;
+const port = process.env.PORT || 3000;
 const path = require("path");
 
 app.set("view engine", "ejs");
@@ -34,12 +34,12 @@ app.get("/", (req, res) => {
     res.redirect("/");
   });
 
-app.get("/Deck/:id", (req, res) => {
-  const id = req.params.id;
-  const pokemon = pokedex[id]
-  res.render("Deck", {
-    pokemon,
-  });
-})
+// app.get("/Deck/:id", (req, res) => {
+//   const id = req.params.id;
+//   const pokemon = pokedex[id]
+//   res.render("Deck", {
+//     pokemon,
+//   });
+// })
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
