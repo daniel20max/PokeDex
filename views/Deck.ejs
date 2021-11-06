@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Pokemon</title>
 </head>
 <body>
@@ -21,11 +22,18 @@
         <img class="pokemon" src="/img/Pokemon.png">
         </center>
     </header>
-    <div>
-        <img src="<%= pokemon.imagem %">
+    <div class="">
+        <center>
+        <h1><%= pokemon.nome %></h1>
+        <img src="<%= pokemon.imagem %>">
+        <h4><%= pokemon.tipo%></h4>
+        <h4><%= pokemon.descricao%></h4>
+        <h4><%= pokemon.altura%></h4>
+        <h4><%= pokemon.peso%></h4>
+        <h4><%= pokemon.categoria%></h4>
+        <h4><%= pokemon.habilidade%></h4>
+        </center>
     </div>
-    <div>
-    
-    </div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
