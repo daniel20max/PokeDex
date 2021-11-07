@@ -27,9 +27,9 @@
         <img class="pokemon" src="/img/Pokemon.png">
         </center>
     </header>
-    <section id="pokedex">
+    <section class="pokeInfo">
         <% pokedex.forEach((item, index)=> { %>
-            <a class="pokeInfo" href="/Deck/<%= index %>" >
+            <a href="/Deck/<%= index %>" style="text-decoration: none">
                 <img src="<%= item.imagem %>">
                 <h2><%= item.nome %></h2>
                 <h4><%= item.tipo %></h4>

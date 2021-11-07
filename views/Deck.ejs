@@ -22,16 +22,18 @@
         <img class="pokemon" src="/img/Pokemon.png">
         </center>
     </header>
-    <div class="">
+    <div class="pickPoke">
         <center>
-        <h1><%= pokemon.nome %></h1>
-        <img src="<%= pokemon.imagem %>">
-        <h4><%= pokemon.tipo%></h4>
-        <h4><%= pokemon.descricao%></h4>
-        <h4><%= pokemon.altura%></h4>
-        <h4><%= pokemon.peso%></h4>
-        <h4><%= pokemon.categoria%></h4>
-        <h4><%= pokemon.habilidade%></h4>
+        <h1><%= pokemon.nome %> Nº<%= pokemon.numero%></h1>
+            <img src="<%= pokemon.imagem %>">
+        <section class="listPoke">
+            <h4><%= pokemon.tipo%></h4>
+            <h4><%= pokemon.descricao%></h4>
+            <h4><%= pokemon.altura%></h4>
+            <h4><%= pokemon.peso%></h4>
+            <h4><%= pokemon.categoria%></h4>
+            <h4><%= pokemon.habilidade%></h4>
+        </section>
         </center>
     </div>
     <script src="/js/script.js"></script>

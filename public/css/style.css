@@ -122,3 +122,42 @@ input::placeholder{
     color: rgb(245, 237, 237);
     font-size: 20px;
 }
+.pokeInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: flex-start;
+}
+.pokeInfo h2, h4{
+    margin-left: 200px;
+}
+.pokeInfo img{
+    width: 475px;
+    height: 475px;
+}
+.pickPoke img{
+    width: 475px;
+    height: 475px;
+}
+.pickPoke h4{
+    margin-right: 200px;
+    font-size: x-large;
+    width: 400px;
+}
+.pickPoke h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.listPoke{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.pickPoke, body{
+    background-color: #fff2f2;
+}
+header{
+    background-color: rgb(247, 217, 217);
+}
